@@ -14,4 +14,12 @@ setup(
         "Topic :: System :: Archiving :: Backup",
         "Programming Language :: Python :: 3.9",
     ],
+    package_dir={'': 'src'},
+    install_requires=['boto3'],
+    python_requires='>=3.6',
+    entry_points={
+        'console_scripts': [
+            'pgbackup=pgbackup.cli:main',
+        ],
+    }
 )
