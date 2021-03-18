@@ -38,3 +38,6 @@ def main():
         outfile = open(args.destination, 'wb')
         storage.local(dump.stdout, outfile)
         print(f"Backing database up locally to {outfile.name}")
+
+    # TODO
+    # Add more options in order to do the same backup to google cloud and nfs
